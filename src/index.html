@@ -12,7 +12,35 @@
 	<script src="https://unpkg.com/react@16.8.4/umd/react.development.js"></script>
 	<script src="https://unpkg.com/react-dom@16.8.4/umd/react-dom.development.js"></script>
 	<script>
-		// Your code is going to go here
+		const Pet = ({name, animal, breed}) => (
+			React.createElement("div", {}, [
+				React.createElement("h1", {}, name),
+				React.createElement("h1", {}, animal),
+				React.createElement("h1", {}, breed),
+			])
+		)
+
+		const App = () => {
+			return React.createElement(
+				"div",
+				{
+					id: "something-important"
+				},
+				React.createElement("h1", {}, "Adopt Me!"),
+				Pet({
+					name: "Bob",
+					animal: "Party Animal",
+					breed: "Caucasian"
+				}),
+				React.createElement(Pet, {
+					name: "Luna",
+					animal: "Dog",
+					breed: "Havanese"
+				})
+			);
+		};
+
+		ReactDOM.render(React.createElement(App), document.getElementById("root"))
 	</script>
 </body>
 </html>
