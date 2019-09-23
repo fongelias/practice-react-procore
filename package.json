@@ -1,0 +1,23 @@
+{
+  "name": "practice-react-procore",
+  "version": "1.0.0",
+  "description": "a repo for notes as we go through the react course as a group",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier \"src/**/*.{js,html}\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fongelias/practice-react-procore.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fongelias/practice-react-procore/issues"
+  },
+  "homepage": "https://github.com/fongelias/practice-react-procore#readme",
+  "devDependencies": {
+    "prettier": "^1.18.2"
+  }
+}
